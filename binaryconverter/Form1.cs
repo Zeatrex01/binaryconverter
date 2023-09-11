@@ -19,7 +19,7 @@ namespace binaryconverter
             }
             else
             {
-                // Binary kutusuna geçerli bir deðer girildiðinde uyarý verme
+                
                 if (!string.IsNullOrWhiteSpace(binaryInput))
                 {
                     string textOutput = BinaryToText(binaryInput);
@@ -55,13 +55,13 @@ namespace binaryconverter
         {
             string textInput = textbox.Text;
             string binaryOutput = TextToBinary(textInput);
-            if (binaryOutput != null) // Geçerli bir dönüþüm sonucu varsa
+            if (binaryOutput != null) 
             {
                 binarybox.Text = binaryOutput;
             }
             else
             {
-                // Metin kutusuna geçerli bir deðer girildiðinde uyarý verme
+                
                 if (!string.IsNullOrWhiteSpace(textInput))
                 {
                     MessageBox.Show("Invalid text input. Please enter valid text in the text box.");
@@ -94,7 +94,7 @@ namespace binaryconverter
             }
             catch (Exception ex)
             {
-                // Binary kutusuna geçerli bir deðer girildiðinde uyarý verme
+                
                 if (!string.IsNullOrWhiteSpace(binary))
                 {
                     MessageBox.Show("invalid character input: " + ex.Message);
