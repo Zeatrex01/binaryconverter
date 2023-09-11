@@ -64,7 +64,7 @@ namespace binaryconverter
                 // Metin kutusuna geçerli bir deðer girildiðinde uyarý verme
                 if (!string.IsNullOrWhiteSpace(textInput))
                 {
-                    MessageBox.Show("Geçersiz metin giriþi. Lütfen metin kutusuna geçerli bir metin girin.");
+                    MessageBox.Show("Invalid text input. Please enter valid text in the text box.");
                 }
                 binarybox.Text = "";
             }
@@ -97,7 +97,7 @@ namespace binaryconverter
                 // Binary kutusuna geçerli bir deðer girildiðinde uyarý verme
                 if (!string.IsNullOrWhiteSpace(binary))
                 {
-                    MessageBox.Show("Geçersiz binary giriþi: " + ex.Message);
+                    MessageBox.Show("invalid character input: " + ex.Message);
                 }
                 return null;
             }
