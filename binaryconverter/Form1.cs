@@ -94,7 +94,7 @@ namespace binaryconverter
             }
             catch (Exception ex)
             {
-                
+               
                 if (!string.IsNullOrWhiteSpace(binary))
                 {
                     MessageBox.Show("invalid character input: " + ex.Message);
